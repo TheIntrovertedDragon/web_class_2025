@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(187, 187, 223);
+}
+
+.container {
+  width:1000px;
+  margin:0 auto;
+  padding: 20px;
+  background-color:rgba(137, 146, 194, 0.9);
+}
+
+.nav {
+  list-style:none;
+  text-align:center;
+}
+ .nav li {
+  display:inline;
+  margin-right:100px;
+  margin-left:100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+.main1 {
+  width:1000px;
+  margin:0 auto;
+  padding:20px;
+  background-color:rgba(230, 230, 245, 0.9);
+}
+
+.main2 {
+  width:1000px;
+  margin:0 auto;
+  padding:20px;
+  background-color:rgba(230, 230, 245, 0.9);
+  border-top: 2px solid rgba(127, 125, 169, 0.9);
+}
+
+.imagecenter {
+  display: block;
+  margin: 0 auto;
+  opacity: 1;
+}

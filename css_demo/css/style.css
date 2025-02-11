@@ -1,0 +1,49 @@
+body {
+  background-color:rgb(223, 255, 255)
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  border: 5px solid rgb(11, 86, 88);
+  padding: 30px;
+  background-color:cadetblue
+}
+
+.body {
+  width:1000px;
+  margin:0 auto;
+  border: 5px solid rgb(64, 120, 122);
+  padding: 30px;
+  background-color:rgb(231, 243, 243)
+}
+
+.nav {
+  list-style:none;
+  text-align:center;
+}
+
+.nav li {
+  display:inline;
+  margin-right: 20px
+}
+
+.copy{
+  font: size 30px;
+  color:rgb(36, 98, 100)
+}
+
+.span1 {
+  color:darkgreen;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.span2 {
+  color:blue;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.span_passion {
+  font-size: large;
+  font-family: cursive;
+}

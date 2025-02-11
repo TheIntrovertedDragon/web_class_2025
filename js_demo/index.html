@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audrey | JS Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+  <h1>Java Script with Wings of Fire :D</h1>
+  <h2>Onclick events:</h2>
+  <p><a href="https://tuibooks.com/wings-of-fire/" target="_blank" onclick="alert('Warning!\nIf you follow this link, you better read Wings of Fire\n')">Tui T. Sutherland's website</a></p>
+
+  <h2>Math and dragons</h2>
+  <p>If Starflight has 12 scrolls, and Kestrel tears 3 of them to shreds in rage, then burns them, how many scrolls does Starflight have now?</p>
+  <button onclick="document.getElementById('add').innerHTML=12-3">Click here for the answer</button>
+  <p id="add"></p>
+
+  <h2>Date and time</h2>
+  <button onclick="document.getElementById('date').innerHTML= Date()">Click for date and time</button>
+  <p id="date"></p>
+
+  <h2>Changing text</h2>
+  <button onclick="document.getElementById('change-text').innerHTML='Read Wings of Fire'">press this</button>
+  <p id="change-text">this text will change</p>
+
+  <h2>Functions</h2>
+  <p>Functions that add text</p>
+  <button onclick="pFun()">Click to run a function</button>
+  <p id="p-fun"></p>
+
+  <h2>User data</h2>
+  <button onclick="askName()">Click to enter your dragon name</button>
+  <p id="ask-name"></p>
+
+  <h2>Have you read Wings of Fire?</h2>
+  <button onclick="haveRead()">Yes</button>
+  <p id="have-read"></p>
+  <button onclick="noRead()">No</button>
+  <p id="no-read"></p>
+
+  <h2>quEStIoNS</h2>
+  <button onclick="askQuestion()">Click for a question. It is not 'have you read Wings of Fire'</button>
+  <p id="question"></p>
+
+  <script>
+    //alert('Read Wings of Fire.\nread it read it read it read it read it\nREAD IT READ IT READ IT READ IT READ IT\nRRRREEEEEEEEAAAAAAAADDDDDDDDDDD IIIIIIIIITTTTTTTTT');
+
+    function haveRead() {
+      var p = document.getElementById('have-read');
+      p.innerHTML= 'Good job! You are amazing'
+    }
+
+    function noRead() {
+      var p = document.getElementById('no-read');
+      p.innerHTML= '*Sigh*'
+    }
+
+    function askName() {
+      var nameReturn = document.getElementById('ask-name');
+      var name = prompt('Please enter your dragon name' , 'HERE');
+      if (name=='') {
+        alert('Please try again')
+      } else {
+        nameReturn.innerHTML='Hello ' + name + '! Nice to meet you! I hope you have read Wings of Fire by this point'
+      }
+    }
+
+    function pFun() {
+      var p = document.getElementById('p-fun');
+      p.innerHTML='You just ran a function! Now you can go read Wings of Fire';
+      p.style.color = 'rgb(80, 40, 120)'; 
+      p.style.fontSize = '30px';
+      p.style.textAlign = 'center';
+    }
+  </script>
+</body>
+</html>
